@@ -39,8 +39,7 @@ This work is based on a first chapter of data analysis [2] that highlights key t
  
 ##  **4.	Data exploration**
 
-We will measure the **adoption of solar systems** through the variable 
-`solar_panel_area_per_capita`. We will draw up a matrix of correlations of deemed and less deemed factors over the target.
+We will measure the **adoption of solar systems** through the variable `solar_panel_area_per_capita`. We will draw up a matrix of correlations of deemed and less deemed factors over the target.
 Certain factors are deemed to be decisive in the choice for households to equip with solar systems. These factors become evident when the following observations are made:
 -	households are likely to equip themselves with solar equipment where the solar resource is the most abundant.
 -	households that can afford it financially are more likely to invest in solar systems.
