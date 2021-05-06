@@ -107,10 +107,12 @@ Putting the factors face to face on graphs will allow us to see how what the loc
 
 ![PIC6](/md_images/pic6.PNG) 
 
+
 According to the Solar_panel_area_per_capita histogram, the group of vast majority of installed solar systems is located where `Solar_panel_area_per_capita` is below **0.03 m2/capita**.
 
 
 ![PIC7](/md_images/pic7.PNG)
+
 
 Let's look at the ranges of median age, income and education level of 60% of the records of this sample, between the 20% and 80% percentiles.
 
@@ -123,8 +125,7 @@ We note the very meaningful characteristics of the group of households whose
 ##  **7.	Correlational analysis**
 ![PIC8](/md_images/pic8.PNG)
 
-**There is a very strong correlation between `average_household_income` and
-`number_of_years_of_education`. We can easily explain this correlation. In general, education opens doors to higher-paying jobs.**
+**There is a very strong correlation between `average_household_income` and `number_of_years_of_education`. We can easily explain this correlation. In general, education opens doors to higher-paying jobs.**
 
 **`Age_median` is much less correlated with average_household_income.**
 
