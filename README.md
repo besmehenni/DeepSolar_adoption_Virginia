@@ -150,9 +150,11 @@ We note the very meaningful characteristics of the group of households whose
 ######  **8.1	Preliminary modeling**
 
 #3D visualization between selected factors in a first view
+
 ![PIC10](/md_images/pic10.PNG)
 
 #3D visualization between selected factors in a second view
+
 ![PIC11](/md_images/pic11.PNG)
 
 #Preliminary modeling using a RandomForestRegressor
