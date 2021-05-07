@@ -45,9 +45,12 @@ Certain factors are deemed to be decisive in the choice for households to equip 
 -	households that can afford it financially are more likely to invest in solar systems.
 -	incentives can facilitate access to solar systems, especially for households that initially lacked the capacity to afford them.
 -	feed-in tariffs for grid electricity are decisive for acquiring solar systems.
+
 Two missing factors that will unfortunately not be studied here, as they have not been collected in the present dataset:
 -	I think that data about the **intensity of incentives** would have been useful, i.e. special retail electricity tariffs (in c$/kWh) or investment incentives for the purchase of solar systems. This can make the difference and allow households to move from a situation of non-accessor to potential accessor of a solar system.
 -	the **ecological awareness** is a more personal factor that is likely to be influential. Maybe it could have been read in voting intentions for example.
+
+
 
 
 #Explanations about the way I proceed:
@@ -191,11 +194,11 @@ Correct fitting on the training data, the test score is acceptable. The model sh
 
 ######  **8.3	Conclusions**
 
-**The fine-tuned model confirms that the `average_household_income` of the locality, 
-`number_of_years_of_education`, `age_median` and `daily_solar_radiation` factors can acceptably explain the adoption of solar energy in Virginia state.**
+The fine-tuned model confirms that the `average_household_income` of the locality,
+`number_of_years_of_education`, `age_median` and `daily_solar_radiation` factors can acceptably explain the adoption of solar energy in Virginia state.
 
-**The `average_household_income` factor has the most important contribution.**
+The `average_household_income` factor has the most important contribution.
 
-**The level of education (`number_of_years_of_education`) is also an important factor in which we can find intrinsically the level of income (`average_household_income`), as seen before in the correlation matrix.**
+The level of education (`number_of_years_of_education`) is also an important factor in which we can find intrinsically the level of income (`average_household_income`), as seen before in the correlation matrix.
 
-**Concerning the contribution of `age_median`, to explain this we should rather look at what advancement in age and career brings: perhaps the rationality of the choices of household members, the stability of its income and the ability to make investments in order to project savings in the upcoming years.**
+Concerning the contribution of `age_median`, to explain this we should rather look at what advancement in age and career brings: perhaps the rationality of the choices of household members, the stability of its income and the ability to make investments in order to project savings in the upcoming years.
