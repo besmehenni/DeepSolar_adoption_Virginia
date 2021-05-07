@@ -111,7 +111,7 @@ Putting the factors face to face on graphs will allow us to see how what the loc
 ![PIC6](/md_images/pic6.PNG) 
 
 
-According to the Solar_panel_area_per_capita histogram, the group of vast majority of installed solar systems is located where `Solar_panel_area_per_capita` is below **0.03 m2/capita**.
+According to the `Solar_panel_area_per_capita` histogram, the group of vast majority of installed solar systems is located where `Solar_panel_area_per_capita` is below **0.03 m2/capita**.
 
 
 ![PIC7](/md_images/pic7.PNG)
