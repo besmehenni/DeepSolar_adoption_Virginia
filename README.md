@@ -204,3 +204,5 @@ The `average_household_income` factor has the most important contribution.
 The level of education (`number_of_years_of_education`) is also an important factor in which we can find intrinsically the level of income (`average_household_income`), as seen before in the correlation matrix.
 
 Concerning the contribution of `age_median`, to explain this we should rather look at what advancement in age and career brings: perhaps the rationality of the choices of household members, the stability of its income and the ability to make investments in order to project savings in the upcoming years.
+
+This ranking could be made more realistic by taking into account adoption factors here absent from the analysis such as the ecological motivation of households or the intensity of financial incentives provided for the purchase of a solar system. Unfortunately, we did not find data illustrating these considerations in the DeepSolar dataset. This would need to be improved.
