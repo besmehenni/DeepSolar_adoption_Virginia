@@ -97,7 +97,7 @@ In the dataset, there is a problem with very large floating-point numbers for wh
 
 #Data cleaning: We see several outliers that can be deleted after 0.125
 ![PIC5](/md_images/pic5.PNG)
- 
+<br/><br/>
 We take the target variable **`Solar_panel_area_per_capita`** to illustrate the **adoption of solar systems**.
 
 #To not skew the analysis by zero-values, we keep a dataset with only rows `solar_panel_area_per_capita` > 0
@@ -108,7 +108,7 @@ We take the target variable **`Solar_panel_area_per_capita`** to illustrate the 
 
 Putting the factors face to face on graphs will allow us to see how what the locality has in household profiles contributes to adoption.
 
-![PIC6](/md_images/pic6.PNG) 
+![PIC6](/md_images/pic6.PNG)<br/><br/>
 
 
 According to the `Solar_panel_area_per_capita` histogram, the group of vast majority of installed solar systems is located where `Solar_panel_area_per_capita` is below **0.03 m2/capita**.
@@ -128,11 +128,11 @@ We note the very meaningful characteristics of the group of households whose
 ##  **7.	Correlational analysis**
 ![PIC8](/md_images/pic8.PNG)
 
-**There is a very strong correlation between `average_household_income` and `number_of_years_of_education`. We can easily explain this correlation. In general, education opens doors to higher-paying jobs.**
+There is a very strong correlation between `average_household_income` and `number_of_years_of_education`. We can easily explain this correlation. In general, education opens doors to higher-paying jobs.
 
-**`Age_median` is much less correlated with average_household_income.**
+`Age_median` is much less correlated with average_household_income.
 
-**It would have been interesting to see how these factors correlate with other factors that reflect the "green" mentality or the motivation to do savings.**
+It would have been interesting to see how these factors correlate with other factors that reflect the "green" mentality or the motivation to do savings.<br/><br/>
 
 #What are the features without variance?
 
@@ -171,11 +171,11 @@ Good fitting on the training data. The test score could be much higher.
 
 **The level of education (`number_of_years_of_education`) factor may be influencing the adoption because of partly an intrinsec factor which is the level of income again (`average_household_income`). We have seen that these factors are highly correlated.**
 
-**`Age_median` has also a contribution to the adoption.**
+**`Age_median` has also a contribution to the adoption.**<br/><br/>
  
 #We continue with the same descriptive variables for the fine-tuned model
 
-#retained = [`average_household_income`,`age_median`,`daily_solar_radiation`,`number_of_years_of_education`]
+#retained = [`average_household_income`,`age_median`,`daily_solar_radiation`,`number_of_years_of_education`]<br/><br/>
 
 
 
@@ -191,7 +191,7 @@ Correct fitting on the training data, the test score is acceptable. The model sh
 
 ![PIC15](/md_images/pic15.PNG)
 
-![PIC16](/md_images/pic16.PNG)
+![PIC16](/md_images/pic16.PNG)<br/><br/>
  
 
 ######  **8.3	Conclusions**
