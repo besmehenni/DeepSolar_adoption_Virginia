@@ -11,7 +11,7 @@ Report is available and can be downloaded (“Report_solar_adopt_EN”)<br/><br/
 http://web.stanford.edu/group/deepsolar/home
 
 [2] Python notebook / data analysis: 
-https://www.kaggle.com/andromedasagan/implementation-of-solar-energy-in-the-us
+https://www.kaggle.com/andromedasagan/implementation-of-solar-energy-in-the-us<br/><br/>
 
 ##  **2.	Context**
 
@@ -19,7 +19,7 @@ The source of data is Stanford University’s DeepSolar project, a deep learning
 
 My ambition in this work is to build a socio-economic analysis of the last mile to understand what are the profiles within a homogeneous group of households that is adopting solar energy. It focuses on the state of Virginia.
 
-This work is based on a first chapter of data analysis [2] that highlights key trends and correlations in the deployment of solar power based on the full Deepsolar dataset.
+This work is based on a first chapter of data analysis [2] that highlights key trends and correlations in the deployment of solar power based on the full Deepsolar dataset.<br/><br/>
 
 ##  **3.	Goal**
 -	Explore the data, handle missing values.
@@ -35,7 +35,7 @@ This work is based on a first chapter of data analysis [2] that highlights key t
 
 #Deleting 'employed' and 'unemployed' columns
 
-![PIC1](/md_images/pic1.PNG)
+![PIC1](/md_images/pic1.PNG)<br/><br/>
  
 ##  **4.	Data exploration**
 
@@ -72,7 +72,7 @@ Dataset contains socio-economic and environmental data.
 -	age_median - median age,ACS 2015 (5-Year Estimates)
 -	number_of_years_of_education - number of years of education,ACS 2015 (5-Year Estimates)
 -	employed,number of employed people,ACS 2015 (5-Year Estimates)
--	unemployed,number of unemployed people,ACS 2015 (5-Year Estimates)
+-	unemployed,number of unemployed people,ACS 2015 (5-Year Estimates)<br/><br/>
 
 ##  **5.	Missing values**
 
@@ -88,7 +88,7 @@ In the dataset, there is a problem with very large floating-point numbers for wh
  
 #Fill NaN with the column median value (except in`daily_solar_radiation` with the mean value)
 
-#Delete rows without values in `Solar_panel_area_per_capita`.
+#Delete rows without values in `Solar_panel_area_per_capita`.<br/><br/>
 
 ##  **6.	Vizualisations**
 
@@ -123,7 +123,7 @@ We note the very meaningful characteristics of the group of households whose
 `Solar_panel_area_per_capita` is below 0.03 m2/capita for the vast majority of installed solar systems. For **60% of the records in this sample**:
 -	average household income is between **56000** and **128000$**
 -	median age is between **33** and **44 years old**.
--	level of education is between **13** and **16 years of education**.
+-	level of education is between **13** and **16 years of education**.<br/><br/>
 
 ##  **7.	Correlational analysis**
 ![PIC8](/md_images/pic8.PNG)
@@ -142,7 +142,7 @@ We note the very meaningful characteristics of the group of households whose
 
 #Despite there is a strong correlation of the target with `number_of_years_of_education`, the model gives better prediction results with it, that's why we keep it. And it works better without `employment_rate`.
 
-#retained = [`number_of_years_of_education`,`daily_solar_radiation`,`age_median`,`average_household_income`]
+#retained = [`number_of_years_of_education`,`daily_solar_radiation`,`age_median`,`average_household_income`]<br/><br/>
 
 
 ##  **8.	Forecasting solar adoption**
