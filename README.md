@@ -27,13 +27,13 @@ This work is based on a first chapter of data analysis [2] that highlights key t
 -	Model by ML the adoption of solar energy by households. we take the target variable **`Solar_panel_area_per_capita`** to illustrate the adoption of solar systems. Using ML to show the factors involved in explaining the adoption.
 
 
-* Explanations about the way I proceed:
+Explanations about the way I proceed:
 
-#Importing Deepsolar dataset restricted to Virginia state
+* Importing Deepsolar dataset restricted to Virginia state
 
-#Creation of column 'employment_rate' and calculation of the employment rate
+* Creation of column 'employment_rate' and calculation of the employment rate
 
-#Deleting 'employed' and 'unemployed' columns
+* Deleting 'employed' and 'unemployed' columns
 
 ![PIC1](/md_images/pic1.PNG)<br/><br/>
  
@@ -53,9 +53,9 @@ Two missing factors that will unfortunately not be studied here, as they have no
 
 
 
-#Explanations about the way I proceed:
+Explanations about the way I proceed:
 
-#Variables are renamed : `incentive_count_residential` in `incentive_count_resid`, `incentive_residential_state_level` in `incentive_count_resid_state`
+* Variables are renamed : `incentive_count_residential` in `incentive_count_resid`, `incentive_residential_state_level` in `incentive_count_resid_state`
 
 
 
@@ -78,33 +78,33 @@ Dataset contains socio-economic and environmental data.
 
 In the dataset, there is a problem with very large floating-point numbers for which INF values are returned. To solve the problem, the max values are filtered and then discarded.
 
-#Explanations about the way I proceed:
+Explanations about the way I proceed:
 
-#Data cleaning: deletion of values Inf
+* Data cleaning: deletion of values Inf
 
-#Printing a dataset describe
+* Printing a dataset describe
 
 ![PIC2](/md_images/pic2.PNG)
  
-#Fill NaN with the column median value (except in`daily_solar_radiation` with the mean value)
+* Fill NaN with the column median value (except in`daily_solar_radiation` with the mean value)
 
-#Delete rows without values in `Solar_panel_area_per_capita`.<br/><br/>
+* Delete rows without values in `Solar_panel_area_per_capita`.<br/><br/>
 
 ##  **6.	Vizualisations**
 
-#Visualization of the different behaviors between the main factors and the target in order to identify possible outliers
+* Visualization of the different behaviors between the main factors and the target in order to identify possible outliers
 ![PIC3](/md_images/pic3.PNG)
 
-#Data cleaning: We see several outliers that can be deleted after 0.125
+* Data cleaning: We see several outliers that can be deleted after 0.125
 ![PIC5](/md_images/pic5.PNG)
 <br/><br/>
 We take the target variable **`Solar_panel_area_per_capita`** to illustrate the **adoption of solar systems**.
 
-#To not skew the analysis by zero-values, we keep a dataset with only rows `solar_panel_area_per_capita` > 0
+* To not skew the analysis by zero-values, we keep a dataset with only rows `solar_panel_area_per_capita` > 0
 
-#At this time, we ignore variables that are identical in value within the entire population (std = 0)
+* At this time, we ignore variables that are identical in value within the entire population (std = 0)
 
-#Drop_elements = [`county`,`incentive_count_resid`,`incentive_count_resid_state`,`avg_electricity_retail_rate`]
+* Drop_elements = [`county`,`incentive_count_resid`,`incentive_count_resid_state`,`avg_electricity_retail_rate`]
 
 Putting the factors face to face on graphs will allow us to see how what the locality has in household profiles contributes to adoption.
 
@@ -134,36 +134,36 @@ There is a very strong correlation between `average_household_income` and `numbe
 
 It would have been interesting to see how these factors correlate with other factors that reflect the "green" mentality or the motivation to do savings.<br/><br/>
 
-#What are the features without variance?
+* What are the features without variance?
 
 ![PIC9](/md_images/pic9.PNG)
 
-#We ignore variables without variance that will not bring to a modeling.
+* We ignore variables without variance that will not bring to a modeling.
 
-#Despite there is a strong correlation of the target with `number_of_years_of_education`, the model gives better prediction results with it, that's why we keep it. And it works better without `employment_rate`.
+* Despite there is a strong correlation of the target with `number_of_years_of_education`, the model gives better prediction results with it, that's why we keep it. And it works better without `employment_rate`.
 
-#retained = [`number_of_years_of_education`,`daily_solar_radiation`,`age_median`,`average_household_income`]<br/><br/>
+* retained = [`number_of_years_of_education`,`daily_solar_radiation`,`age_median`,`average_household_income`]<br/><br/>
 
 
 ##  **8.	Forecasting solar adoption**
 
 ######  **8.1	Preliminary modeling**
 
-#3D visualization between selected factors in a first view
+* 3D visualization between selected factors in a first view
 
 ![PIC10](/md_images/pic10.PNG)
 
-#3D visualization between selected factors in a second view
+* 3D visualization between selected factors in a second view
 
 ![PIC11](/md_images/pic11.PNG)
 
-#Preliminary modeling using a RandomForestRegressor
+* Preliminary modeling using a RandomForestRegressor
 
 ![PIC12](/md_images/pic12.PNG)
  
 Good fitting on the training data. The test score could be much higher.
 
-#Feature importance: ranking of the features in the explanation of the target
+* Feature importance: ranking of the features in the explanation of the target
 
 ![PIC13](/md_images/pic13.PNG)
  
@@ -173,21 +173,21 @@ Good fitting on the training data. The test score could be much higher.
 
 **`Age_median` has also a contribution to the adoption.**<br/><br/>
  
-#We continue with the same descriptive variables for the fine-tuned model
+* We continue with the same descriptive variables for the fine-tuned model
 
-#retained = [`average_household_income`,`age_median`,`daily_solar_radiation`,`number_of_years_of_education`]<br/><br/>
+* retained = [`average_household_income`,`age_median`,`daily_solar_radiation`,`number_of_years_of_education`]<br/><br/>
 
 
 
 ######  **8.2	Fine-tuning the parameters of the model**
 
-#GridSearch
+* GridSearch
 
 ![PIC14](/md_images/pic14.PNG)
 
 Correct fitting on the training data, the test score is acceptable. The model shows some signs of overfitting, i.e. weaknesses in its generalizability.
 
-#Feature importance : ranking of the features in the explanation of the target
+* Feature importance : ranking of the features in the explanation of the target
 
 ![PIC15](/md_images/pic15.PNG)
 
