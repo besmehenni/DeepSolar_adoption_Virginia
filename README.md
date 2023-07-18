@@ -27,7 +27,7 @@ This work is based on a first chapter of data analysis [2] that highlights key t
 -	Model by ML the adoption of solar energy by households. we take the target variable **`Solar_panel_area_per_capita`** to illustrate the adoption of solar systems. Using ML to show the factors involved in explaining the adoption.
 
 
-#Explanations about the way I proceed:
+* Explanations about the way I proceed:
 
 #Importing Deepsolar dataset restricted to Virginia state
 
