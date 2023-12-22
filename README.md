@@ -1,5 +1,5 @@
 #### **Date: 27th January 2021**
-#### **Author : B.Mehenni**
+#### **Author : BM
 
 ### Adoption of solar energy in residential in Virginia state
 
